@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(148, 224, 148);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(4, 121, 4);
+}
+
+/*
+    em HTML é id    = em CSS é #
+    em HTML é class = em CSS é .
+    NÃO é boa pratica repetir um id 2x no mesmo doc(html), pra isso usaremos class 
+*/
+
+h1#principal{ /*ou pode ser só #principal tambem */
+    color: rgb(178, 228, 184);
+    background-color: green;
+    text-align: center;
+}
+
+h2{
+    color: rgb(39, 180, 58);
+}
+
+.basico{
+    color: rgb(80, 192, 36);
+}
+
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: rgba(211, 211, 84, 0.603);
+}

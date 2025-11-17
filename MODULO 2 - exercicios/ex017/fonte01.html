@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        /*se o pc nao tiver arial, ele coloca helvetica e assim por diante. sans-serif é uma fonte sem serifa que ele escolhe
+
+        MEDIDAS ABSOLUTAS
+        px (recom da W3C), cm, mm, in, pt, pc
+
+        MEDIDAS RELATIVAS
+        em (recom da W3C), ex, rem, vw, vh, %
+        */
+
+        font-size: 16px; /*(normalmente esse é o padrão dos sites, no word é 10pto. 16px = 1em (normalmente)*/
+        } 
+
+        h1{
+            /* 
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            
+            AO INVÉS desses 4 de cima, substituir por um short hand font: 
+            - font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'work sans', 'sans-serif';
+        }
+
+        h2, h3{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1> <!--CAP 14 - AULA 03 e 04-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magnam aperiam sed laborum, molestiae illum accusantium voluptas doloremque. Consequatur provident optio dolore cumque amet, accusantium voluptatum commodi eveniet expedita nisi.</p>
+
+    <h2>Sutitulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius nobis, ut repudiandae ipsum praesentium odio officia iste excepturi cum dolorum quam eos animi asperiores veritatis ipsam et numquam soluta tempora?</p>
+
+    <h3>subbbb titulo qualquer</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat autem quam eius libero earum sequi, magnam tenetur aspernatur, ratione voluptate, cumque debitis ducimus deleniti dolorum animi accusantium consequuntur quos ad!</p>
+</body>
+</html>

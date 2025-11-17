@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+            }
+
+        header{
+            background-color: yellow;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 25px;
+        }
+
+        nav{
+            background-color: brown;
+            padding: 3px;
+            box-shadow: 3px 3px 3px black;
+            /*horiz vert espalhamento cor. 
+            CAP 16 - AULA 5 => 9:40 DICA*/
+        }
+
+        nav >a {
+            background-color: green;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 6px -6px;
+        }
+
+        article{
+            background-color: rgb(13, 228, 156);
+            padding: 5px;
+        }
+        article > aside{
+            background-color: blue;
+            color: white;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer >p{ /*CRIADO POIS ELE TAVA CONSIDERANDO P COM 16px*/
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body> <!--TAGS DE AGRUPAMENTO 
+    <div> </div> BOX LEVEL 
+    <span> </span> INLINE LEVEL -->
+    
+    <header> <!--antes era TUDO div, agr o guanabara recomenda usar esses por questao de semantica-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article> <!--pode colocar section dentro de article tb-->
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum, mollitia quos doloremque unde aliquid iste officiis quisquam incidunt voluptatibus praesentium similique, soluta necessitatibus eveniet perferendis sed debitis neque aspernatur!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+        </section>
+        <section id="noticias">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

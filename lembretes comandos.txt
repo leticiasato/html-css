@@ -1,0 +1,37 @@
+LEMBRETES HTML
+
+IMAGENS TAMANHO
+-favicon: 16 a 32
+-img pequenininha 18x18 (<1cm)
+-img perfil:150x150
+-img media:300x300
+-img telona: >1000
+
+FAVICON: Em cima do tittle, "link" >favicon. troca o href
+IMG DO PC: img
+TEXTO LINK: <a>link</a> texto linkado
+
+Em lista n numerada: (disc, circle, square)
+<ul type="square"> .... </ul> (O TYPE NAO SE COMPLETA SOZINHO)
+
+Mouse em cima da palavra e aparece significado
+- abbr
+
+IMG NO GIMP
+-P/ cel: 300x300 (resol. 80x80)
+-P/ Tablet: 700x700
+- PC: 1000x1000
+>exportar> .png
+
+TAG PICTURE: permite criar varios sources (origens)
+
+AUDIO
+-tag audio "arquivo" controls autoplay> 
+
+VIDEO externo
+so colar o link do youtube
+VIDEO interno
+-tag video(tira src) + width + controls + poster + autoplay(talvez)
+-> source src (varias orignes)
+-formatos: mp4,webm, ogv(n pega no safari), m4v(+ recomendado) 
+
