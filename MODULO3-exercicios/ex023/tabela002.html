@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th, td{
             border: 1px solid black;
@@ -20,6 +21,17 @@
             background-color: rgb(71, 71, 71);
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top:0;
+            background-color: rgb(71, 71, 71);
+        }
+
+        tbody >tr:nth-child(2n){ /*ou even(par) ou 2n-1 ou odd(impar) ou 3n..*/
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -77,6 +89,46 @@
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
+                <td class="num">7.35181</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">45.51651</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">35.51545</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">24.6879</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">46.846815</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">9.651561</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.35181</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">24.6879</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">46.846815</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">9.651561</td>
+            </tr>
+            <tr>
+                <td>Rio GRande do Norte</td>
                 <td class="num">7.35181</td>
             </tr>
         </tbody>
