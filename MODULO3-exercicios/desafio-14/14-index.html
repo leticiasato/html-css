@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 14 - Tabelas</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        td, tr, th {
+            border: 1px solid black;
+            padding: 5px 15px;
+            width: 50px;
+        }
+        th {
+            background-color: rgb(122, 121, 121);
+            color: white;
+        }
+        th.difer{
+            background-color: white;
+            color: black;
+        }
+        td.esq, th.esq {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Disciplina</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+        </tr>
+        <tr>
+            <th rowspan="4" class="difer">Exatas</th>
+            <td class="esq">Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="esq">Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="esq">Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="esq">Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="esq">Média de Exatas</th>
+            <th style="background-color: rgb(122, 121, 121); color: white;">0.0</th>
+        </tr>
+        <tr>
+            <th rowspan="2" class="difer">Humanas</th>
+            <td class="esq">Historia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td class="esq">Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="esq">Média de Humanas</th>
+            <th style="background-color: rgb(122, 121, 121); color: white;">0.0</th>
+        </tr>
+    </table>
+</body>
+</html>
