@@ -13,8 +13,13 @@
 </head>
 <body> 
     <h1>Meu primeiro Formulario </h1> <!--sempre relacione o label ao seu input-->
-    <!--1.form/ 2.nome e sobrenome em paragrafos/ 3.input após nome/ 4.label envolvendo nome e sobrenome-->
-    <form action="cadastro.php">
+    <!--
+    #1.form/ 2.nome e sobrenome em paragrafos/ 3.input após nome/ 4.label envolvendo nome e sobrenome
+    #method get aparece o nome cadastrado, ao contrario do POST
+    #GET se enviar até 3mil bites (~letras) (tudo no formulario)
+    #POST se tb dado sigiloso ou foto
+    -->
+    <form action="cadastro.php" method="post">
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!-- name=mais util pra html e php... id=mais util pra javascript e label-->
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
